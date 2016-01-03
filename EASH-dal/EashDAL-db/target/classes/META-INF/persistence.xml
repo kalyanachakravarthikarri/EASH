@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="EmrPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.ea.dal.db.entities.EmrSurgeries</class>
+    <class>com.ea.dal.db.entities.EmrDiagnosisDetails</class>
+    <class>com.ea.dal.db.entities.EmrLabTests</class>
+    <class>com.ea.dal.db.entities.EmrMedications</class>
+    <class>com.ea.dal.db.entities.EmrPatients</class>
+    <class>com.ea.dal.db.entities.latest.EmrBranches</class>
+    <class>com.ea.dal.db.entities.latest.EmrVisitStatusCodes</class>
+    <class>com.ea.dal.db.entities.latest.EmrUserCredentials</class>
+    <class>com.ea.dal.db.entities.latest.EmrDataChangeLog</class>
+    <class>com.ea.dal.db.entities.latest.EmrUserProfiles</class>
+    <class>com.ea.dal.db.entities.latest.EmrDepartments</class>
+    <class>com.ea.dal.db.entities.latest.EmrHospitals</class>
+    <class>com.ea.dal.db.entities.latest.EmrDoctors</class>
+    <class>com.ea.dal.db.entities.latest.EmrSynchronizationLog</class>
+    <class>com.ea.dal.db.entities.latest.EmrVisitTypeCodes</class>
+    <shared-cache-mode>DISABLE_SELECTIVE</shared-cache-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.password" value="admin123"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.user" value="system"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>EASH</artifactId>
+    <groupId>com.ea</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.ea.cardconnector</groupId>
+  <artifactId>EASH-cardconnector</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>EASH-cardconnector</name>
+  
+  <modules>
+    <module>EASHCardConnector-client</module>
+    <module>EASHCardConnector-server</module>
+  </modules>
+</project>
